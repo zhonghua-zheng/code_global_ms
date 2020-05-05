@@ -1,5 +1,6 @@
 PartMC-CESM Workflow
 ======================
+[![DOI](https://zenodo.org/badge/261375968.svg)](https://zenodo.org/badge/latestdoi/261375968)   
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
