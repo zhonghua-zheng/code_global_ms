@@ -1,0 +1,27 @@
+digraph "PartMC-CESM-workflow" {
+	node [shape=box]
+	"Latin hypercube sampling"
+	"Aerosol mixing state indexes emulator"
+	node [shape=cylinder]
+	"PartMC-MOSAIC training data (scenarios)"
+	"PartMC-MOSAIC testing data (scenarios)"
+	"CESM (CAM) outputs"
+	node [shape=folder]
+	"Global aerosol mixing state indexes"
+	subgraph cluster_1 {
+		node [style=filled]
+		color=blue
+		"Latin hypercube sampling" -> "PartMC-MOSAIC training data (scenarios)"
+		"Latin hypercube sampling" -> "PartMC-MOSAIC testing data (scenarios)"
+		label="Blue Waters (scalable simulations)"
+	}
+	"PartMC-MOSAIC training data (scenarios)" -> "Aerosol mixing state indexes emulator" [label="Machine Learning"]
+	"Aerosol mixing state indexes emulator" -> "PartMC-MOSAIC testing data (scenarios)" [label=Validation]
+	"Aerosol mixing state indexes emulator" -> "Global aerosol mixing state indexes" [label=Application]
+	subgraph cluster_2 {
+		node [style=filled]
+		color=purple
+		"CESM (CAM) outputs" -> "Global aerosol mixing state indexes"
+		label="Cheyenne or Blue Waters"
+	}
+}
