@@ -13,7 +13,7 @@ digraph "PartMC-CESM-workflow" {
 		color=blue
 		"Latin hypercube sampling" -> "PartMC-MOSAIC training data (scenarios)"
 		"Latin hypercube sampling" -> "PartMC-MOSAIC testing data (scenarios)"
-		label="Blue Waters (scalable simulations)"
+		label="Scalable simulations"
 	}
 	"PartMC-MOSAIC training data (scenarios)" -> "Aerosol mixing state indexes emulator" [label="Machine Learning"]
 	"Aerosol mixing state indexes emulator" -> "PartMC-MOSAIC testing data (scenarios)" [label=Validation]
@@ -22,6 +22,5 @@ digraph "PartMC-CESM-workflow" {
 		node [style=filled]
 		color=purple
 		"CESM (CAM) outputs" -> "Global aerosol mixing state indexes"
-		label="Cheyenne or Blue Waters"
 	}
 }

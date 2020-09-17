@@ -52,10 +52,10 @@ conda activate partmc
 
 ### Notebooks
 
-| Tasks                                | Folders                          | Fig or Tab in paper    |
-| ------------------------------------ | -------------------------------- | ---------------------- |
-| Emulator Development and Application | emulator_development_application | Fig 3 and Tab 4        |
-| Global Mixing State Indices Analysis | global_mixing_state_analysis     | Fig 4-8, and Fig S1-S2 |
+| Tasks                                                        | Folders                          | Fig or Tab in paper    |
+| ------------------------------------------------------------ | -------------------------------- | ---------------------- |
+| Emulator Development and Application, and Feature Importance | emulator_development_application | Fig 3, Fig 4 and Tab 5 |
+| Global Mixing State Indices Analysis                         | global_mixing_state_analysis     | Fig 5-9, and Fig S1-S2 |
 
 ### Data
 
@@ -79,11 +79,12 @@ conda activate partmc
 
 ```
 ├── scripts
-│   ├── fig_4_5_6_S_global_maps.ipynb.ipynb (global maps: Figs 4, 5, 6, S1, and S2)
-│   ├── fig_7_cesm_chi_relationship.ipynb (heat maps: Fig 7)
-│   ├── fig_8_mixing_state_boxplot.ipynb (box plots: Fig 8)
+│   ├── fig_5_6_7_S_global_maps.ipynb.ipynb (global maps: Figs 5, 6, 7, S1, and S2)
+│   ├── fig_8_cesm_chi_relationship.ipynb (heat maps: Fig 8)
+│   ├── fig_9_boxplot_polluted_areas_northern_hemisphere.ipynb (box plots: Fig 9)
 │   ├── analysis_spatial_pattern.ipynb (regional analysis, such as bar plot)
 │   ├── analysis_global_counts.ipynb (general analysis, such as max, min, and mean)
+│   ├── 3hr_statistics (3hr statistics, such as max and min)
 │   ├── analysis_cities.ipynb (cities analysis)
 │   ├── preprocessing.ipynb (get the ".nc" files in terms of seasons, and masked the areas)
 │   └── util.py (useful functions)

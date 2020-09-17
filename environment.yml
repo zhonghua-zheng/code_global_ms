@@ -26,5 +26,5 @@ dependencies:
 - xesmf
 - zarr
 - pip:
-  - xgboost==0.90
+  - xgboost==1.1.1
 name: partmc

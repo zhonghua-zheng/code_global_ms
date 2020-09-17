@@ -23,7 +23,7 @@ with f.subgraph(name='cluster_1') as c:
     c.node_attr['style'] = 'filled'
     c.edges([('Latin hypercube sampling', 'PartMC-MOSAIC training data (scenarios)'), 
              ('Latin hypercube sampling', 'PartMC-MOSAIC testing data (scenarios)')])
-    c.attr(label='Blue Waters (scalable simulations)')
+    c.attr(label='Scalable simulations')
 
 
 # Machine Learning
@@ -44,7 +44,7 @@ with f.subgraph(name='cluster_2') as b:
     b.attr(color='purple')
     b.node_attr['style'] = 'filled'
     b.edges([('CESM (CAM) outputs', 'Global aerosol mixing state indexes')])
-    b.attr(label='Cheyenne or Blue Waters')
+    # b.attr(label='Cheyenne or Blue Waters')
 
 
     
